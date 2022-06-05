@@ -1,3 +1,5 @@
+import { usersRoutes } from "routes/users.routes";
+
 import { User } from "../../model/User";
 import { IUsersRepository } from "../../repositories/IUsersRepository";
 
