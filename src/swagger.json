@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Desafio II",
+        "description": "Desafio II da Trilha NodeJS - Ignite",
+        "version": "1.0.0",
+        "contact": {
+            "email": "viniciusilva.henriq@gmail.com"
+        }
+
+    },
+    "paths": {
+        "/users": {
+            "post": {
+                "tags": ["User"],
+                "summary": "Create a User",
+                "description": "Create a new User",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "propriets": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "name": "Adelbaldo",
+                                    "email": "adelbaldo@adelbaldo.com"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "400": {
+                        "description": "User alredy exists!"
+                    }
+                }
+            }
+
+        } 
+    }
+}
+        
+    
